@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container">
+    <form class="form-horizontal" method="post" action="">
+  <fieldset>
+    <legend>Create A Product</legend>
+    <div class="form-group">
+      <label for="inputName" class="col-lg-2 control-label">Product Name</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" name="product-name" id="inputName" placeholder="Product Name e.g Supar Chittar">
+      </div>
+    </div>
+
+      <div class="form-group">
+      <label for="inputColor" class="col-lg-2 control-label">Product Color</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" name="product-color" id="inputColor" placeholder="Product Color e.g Blue    ">
+      </div>
+    </div>
+
+     <div class="form-group">
+      <label for="inputSize" class="col-lg-2 control-label">Product Size</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" name="product-size" id="inputSize" placeholder="Product Size e.g 4x5x6 Inches   ">
+      </div>
+    </div>
+
+      <div class="form-group">
+      <label for="inputQuantity" class="col-lg-2 control-label">Product Initial Quantity</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" name="original-quantity" id="inputQuantity" placeholder="">
+      </div>
+    </div>
+
+
+
+
+
+    <div class="form-group">
+      <label for="textArea" class="col-lg-2 control-label">Product Description</label>
+      <div class="col-lg-10">
+        <textarea class="form-control" name="product-description" rows="3" id="textArea"></textarea>
+        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default">Cancel</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+</div>
+
+{% endblock %}

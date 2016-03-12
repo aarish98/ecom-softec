@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container">
+<div class="row">
+{% for category in all_categories[:18] %}
+
+
+    <div class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+            <div class="caption">
+                <img src="" />
+                <h4>{{category.name}}</h4>
+                <p><a href="/category/{{category.id}}" class="btn btn-primary" role="button">Browse</a>
+            </div>
+        </div>
+    </div>
+
+{% endfor %}
+
+ </div>
+    </div>
+{% endblock %}

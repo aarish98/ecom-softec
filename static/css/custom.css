@@ -1,7 +1,15 @@
-.container{
-margin-top:10%
+
+.product-desc{
+    background : #E0E0E0;
 }
 
+.product-desc{
+    font-size:22px;
+    padding: 25px;
+    box-shadow: 2px 2px 2px #ccc;
+    margin-top: 20px;
+}
 
-
-
+.description{
+        font-size:16px;
+}
